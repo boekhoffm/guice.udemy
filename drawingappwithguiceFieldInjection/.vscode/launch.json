@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GuiceDemo",
+            "request": "launch",
+            "mainClass": "com.drawingapp.main.GuiceDemo",
+            "projectName": "drawingappwithguicefieldinjection"
+        },
+        {
+            "type": "java",
+            "name": "TestAccountOp",
+            "request": "launch",
+            "mainClass": "org.junit.runner.JUnitCore",
+            "projectName": "client",
+            "cwd": "${workspaceFolder}/client",
+            "classPaths": [
+                "$Test"
+            ],
+            "args": [
+                "com.misys.ibroker.client.account.TestAccountOp"
+            ],
+            "vmArgs": "-Dclient.properties=etc/client.properties -Dclient.test.accountno=71944 -Dclient.test.clientno>=7223 \"-Dclient.test.password=I048#mcb1\" -Dclient.test.username=i048mcb1 -DDB_PASSWORD=fintech01 -DDB_URL=jdbc:oracle:thin:@//mel-brk-dev3-db:1521/X076 -DDB_USER=broker"
+        }
+    ]
+}
